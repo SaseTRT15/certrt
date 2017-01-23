@@ -169,6 +169,7 @@ $string['pluginadministration'] = 'Certificate administration';
 $string['pluginname'] = 'certrt';
 $string['portrait'] = 'Portrait';
 $string['preview'] = 'Preview';
+$string['preview_2nd_page_default'] = 'Verse page content';
 $string['printdate'] = 'Print Date';
 $string['printdate_help'] = 'This is the date that will be printed, if a print date is selected. If the course completion date is selected but the student has not completed the course, the date received will be printed. You can also choose to print the date based on when an activity was graded. If a certificate is issued before that activity is graded, the date received will be printed.';
 $string['printerfriendly'] = 'Printer-friendly page';
