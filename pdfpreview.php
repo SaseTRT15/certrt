@@ -41,21 +41,21 @@ $certrecord->timecreated = time();
 $certrt->printdate = 1;
 $certrt->datefmt = 2;
 
-$certrt->certrttype = optional_param('type', "A4_embedded",PARAM_TEXT);    // Certificate Type
-$certrt->columnimage = optional_param('columnImg', 0, PARAM_TEXT);    // Certificate Type
-$certrt->borderstyle = optional_param('bdrImg', 0,PARAM_TEXT);    // Certificate Type
-$certrt->printseal = optional_param('pseal', 0,PARAM_TEXT);    // Certificate Type
-$certrt->printsignature = optional_param('signature', 0,PARAM_TEXT);    // Certificate Type
-$certrt->printwmark = optional_param('wmark', 0,PARAM_TEXT);    // Certificate Type
-$certrt->orientation = optional_param('orientation', "L",PARAM_TEXT);    // Certificate Type
-$certrt->seal = optional_param('seal', "0",PARAM_TEXT);    // Certificate Type
-$certrt->bordercolor = optional_param('bclr', "0",PARAM_TEXT);    // Certificate Type
-$certrt->printhours = optional_param('chours', 0,PARAM_INT);    // Certificate Type
+$certrt->certrttype = optional_param('type', "A4_embedded",PARAM_TEXT);    
+$certrt->columnimage = optional_param('columnImg', 0, PARAM_TEXT);  
+$certrt->borderstyle = optional_param('bdrImg', 0,PARAM_TEXT);   
+$certrt->printseal = optional_param('pseal', 0,PARAM_TEXT);   
+$certrt->printsignature = optional_param('signature', 0,PARAM_TEXT);   
+$certrt->printwmark = optional_param('wmark', 0,PARAM_TEXT);    
+$certrt->orientation = optional_param('orientation', "L",PARAM_TEXT); 
+$certrt->seal = optional_param('seal', "0",PARAM_TEXT);   
+$certrt->bordercolor = optional_param('bclr', "0",PARAM_TEXT);  
+$certrt->printhours = optional_param('chours', 0,PARAM_INT);  
 
 
-$certrt->customtext = optional_param('ctext', '',PARAM_RAW);    // Certificate Type
+$certrt->customtext = optional_param('ctext', '',PARAM_RAW);    
 
-$certrt->secondpage = optional_param('spage', "Conteudo do verso da pagina",PARAM_RAW);    // Certificate Type
+$certrt->secondpage = optional_param('spage', get_string('preview_2nd_page_default', 'certrt'),PARAM_RAW);   
 
 
 require("$CFG->dirroot/mod/certrt/type/$certrt->certrttype/certrt.php");
